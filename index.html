@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+if (location.search.indexOf('m=1') !== -1) {
+  location.replace(location.href.replace(/([?&])m=1/, '$1m=0'));
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3YCL5450Y5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3YCL5450Y5');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Telegram</title>
+  <meta name="description" content="দেশি ভিডিও পেতে চ্যানেলে জয়েন করুন 🥵" />
+
+  <!-- Open Graph: Facebook, WhatsApp, Telegram শেয়ারে লোগো দেখাবে -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ভাইরাল সব ভিডিও দেখতে ক্লিক করুন 🥵🤩">
+  <meta property="og:description" content="ভিডিও পেতে TELEGRAM চ্যানেলে জয়েন করুন 💋">
+  <meta property="og:image" content="https://i.postimg.cc/3RJ5m2Yx/IMG-20260610-102006-468.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://telegram-jqnso983l8e1mjg1.netlify.app/">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ভাইরাল সব ভিডিও দেখতে ক্লিক করুন 🥵🤩">
+  <meta name="twitter:description" content="ভিডিও পেতে চ্যানেলে জয়েন করুন 😍">
+  <meta name="twitter:image" content="https://i.postimg.cc/3RJ5m2Yx/IMG-20260610-102006-468.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --tg-bg: #0e1621; --tg-header: #17212b; --tg-search-bg: #242f3d;
+      --tg-tab-active: #2b5278; --tg-tab-text-active: #ffffff; --tg-tab-text: #708499;
+      --tg-text: #ffffff; --tg-text-muted: #7f91a4; --tg-blue-badge: #2b5278;
+      --tg-green-badge: #2eb557; --tg-accent-blue: #229ed9; --tg-ripple: rgba(255,255,255,0.08);
+      --tg-chat-bg: #0e1621; --tg-bubble-other: #182533; --tg-bubble-me: #2b5278;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--tg-bg); color: var(--tg-text); user-select: none; overflow-x: hidden; }
+    .app-container { max-width: 500px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; position: relative; background-color: var(--tg-bg); box-shadow: 0 0 30px rgba(0,0,0,0.5); overflow: hidden; }
+    .header { background-color: var(--tg-header); padding: 14px 16px 10px; position: sticky; top: 0; z-index: 10; animation: slideDown 0.5s cubic-bezier(0.16,1,0.3,1) forwards; }
+    .header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .header-title { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.3px; }
+    .header-icons { display: flex; align-items: center; gap: 16px; }
+    .icon-btn { background: none; border: none; color: var(--tg-text); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s, opacity 0.2s; }
+    .icon-btn:hover { transform: scale(1.15); opacity: 0.85; }
+    .icon-btn:active { transform: scale(0.9); }
+    .search-container { background-color: var(--tg-search-bg); border-radius: 10px; display: flex; align-items: center; padding: 10px 14px; gap: 12px; margin-bottom: 12px; animation: fadeSlideUp 0.5s cubic-bezier(0.16,1,0.3,1) 0.15s both; }
+    .search-icon { width: 18px; height: 18px; fill: var(--tg-text-muted); }
+    .search-placeholder { color: var(--tg-text-muted); font-size: 0.95rem; }
+    .tabs-wrapper { overflow-x: auto; white-space: nowrap; display: flex; gap: 8px; padding-bottom: 4px; animation: fadeSlideUp 0.5s cubic-bezier(0.16,1,0.3,1) 0.25s both; }
+    .tabs-wrapper::-webkit-scrollbar { display: none; }
+    .tab-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 16px; font-size: 0.85rem; font-weight: 600; color: var(--tg-tab-text); cursor: pointer; background: none; border: none; transition: background-color 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s; animation: tabEntrance 0.4s cubic-bezier(0.16,1,0.3,1) both; }
+    .tab-pill:hover { background-color: rgba(43,82,120,0.4); transform: translateY(-1px); }
+    .tab-pill:active { transform: scale(0.95); }
+    .tab-pill.active { background-color: var(--tg-tab-active); color: var(--tg-tab-text-active); box-shadow: 0 2px 8px rgba(34,158,217,0.2); }
+    .tab-pill.active:hover { transform: none; }
+    .tab-badge { background-color: rgba(255,255,255,0.15); font-size: 0.75rem; padding: 1px 6px; border-radius: 10px; color: inherit; }
+    .tab-pill.active .tab-badge { background-color: var(--tg-accent-blue); color: #fff; }
+    .tab-pill.live-pill { background: linear-gradient(135deg,#e74c3c,#c0392b); color: #fff; }
+    .tab-pill.live-pill:hover { transform: translateY(-1px); filter: brightness(1.1); }
+    .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: livePulse 1.2s ease-in-out infinite; }
+    .chat-list { flex: 1; padding-bottom: 80px; }
+    .chat-item { display: flex; align-items: center; padding: 12px 16px; gap: 14px; border-bottom: 1px solid rgba(255,255,255,0.02); cursor: pointer; position: relative; overflow: hidden; transition: background-color 0.2s, transform 0.15s; animation: fadeSlideUpStagger 0.45s cubic-bezier(0.16,1,0.3,1) both; }
+    .chat-item:hover { background-color: rgba(255,255,255,0.04); transform: translateX(4px); }
+    .chat-item:active { background-color: rgba(255,255,255,0.06); transform: translateX(2px) scale(0.995); }
+    .chat-item::after { content: ''; position: absolute; top: 50%; left: 50%; width: 8px; height: 8px; background: var(--tg-ripple); border-radius: 50%; transform: translate(-50%,-50%) scale(0); pointer-events: none; }
+    .chat-item:active::after { animation: rippleAnim 0.5s ease-out; }
+    @keyframes rippleAnim { 0% { transform: translate(-50%,-50%) scale(0); opacity: 0.4; } 100% { transform: translate(-50%,-50%) scale(50); opacity: 0; } }
+    .chat-item[data-idx="0"] { animation-delay: 0.50s; }
+    .chat-item[data-idx="1"] { animation-delay: 0.55s; }
+    .chat-item[data-idx="2"] { animation-delay: 0.60s; }
+    .chat-item[data-idx="3"] { animation-delay: 0.65s; }
+    .chat-item[data-idx="4"] { animation-delay: 0.70s; }
+    .avatar { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.15rem; color: #fff; position: relative; flex-shrink: 0; overflow: hidden; transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1); }
+    .chat-item:hover .avatar { transform: scale(1.08); }
+    .avatar::after { content: ''; position: absolute; bottom: 1px; right: 1px; width: 10px; height: 10px; background-color: var(--tg-green-badge); border: 2px solid var(--tg-bg); border-radius: 50%; animation: onlinePulse 2s ease-in-out infinite; opacity: 0; transition: opacity 0.3s; z-index: 2; }
+    .chat-item[data-online="true"] .avatar::after { opacity: 1; }
+    .avatar-orange { background: linear-gradient(135deg,#f0932b,#ffbe76); }
+    .avatar-blue { background: linear-gradient(135deg,#0984e3,#74b9ff); }
+    .avatar-green { background: linear-gradient(135deg,#27ae60,#2ecc71); }
+    .avatar-purple { background: linear-gradient(135deg,#8e44ad,#9b59b6); }
+    .avatar-red { background: linear-gradient(135deg,#d35400,#e67e22); }
+    .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+    .chat-details { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+    .chat-row-top { display: flex; align-items: center; justify-content: space-between; }
+    .chat-name-area { display: flex; align-items: center; gap: 4px; min-width: 0; }
+    .chat-title { font-size: 0.98rem; font-weight: 600; color: var(--tg-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .verified-icon { width: 16px; height: 16px; fill: var(--tg-accent-blue); flex-shrink: 0; }
+    .chat-time-status { display: flex; align-items: center; gap: 4px; font-size: 0.78rem; color: var(--tg-text-muted); }
+    .double-tick { width: 16px; height: 16px; fill: var(--tg-accent-blue); }
+    .chat-row-bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .chat-message-preview { font-size: 0.88rem; color: var(--tg-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; }
+    .chat-message-preview.active-live { color: var(--tg-green-badge); font-weight: 500; animation: statusCycle 2s ease-in-out infinite; }
+    .typing-dots { display: inline-flex; align-items: center; gap: 2px; }
+    .typing-dot { width: 5px; height: 5px; background-color: var(--tg-green-badge); border-radius: 50%; animation: typingDot 1.2s ease-in-out infinite; }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    .unread-badge { background-color: var(--tg-green-badge); color: #fff; font-size: 0.75rem; font-weight: 700; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+    .unread-badge.muted { background-color: #212d3b; color: #7f91a4; }
+    .bottom-nav { position: absolute; bottom: 0; left: 0; right: 0; height: 64px; background-color: var(--tg-header); border-top: 1px solid rgba(255,255,255,0.03); display: flex; justify-content: space-around; align-items: center; z-index: 10; animation: slideUpBar 0.5s cubic-bezier(0.16,1,0.3,1) 0.45s both; }
+    .nav-item { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--tg-text-muted); text-decoration: none; font-size: 0.75rem; font-weight: 500; position: relative; flex: 1; padding: 8px 0; transition: color 0.25s, transform 0.2s; }
+    .nav-item:hover { color: rgba(255,255,255,0.7); transform: translateY(-2px); }
+    .nav-item:active { transform: scale(0.92); }
+    .nav-item.active { color: var(--tg-accent-blue); }
+    .nav-icon { width: 22px; height: 22px; fill: currentColor; transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1); }
+    .nav-item:hover .nav-icon { transform: scale(1.2); }
+    .nav-item.active .nav-icon { transform: scale(1.1); }
+    .nav-badge { position: absolute; top: 2px; right: 25%; background-color: var(--tg-accent-blue); color: #fff; font-size: 0.68rem; font-weight: 700; padding: 1px 5px; border-radius: 8px; }
+    .nav-profile-pic { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--tg-text-muted); }
+    .nav-item.active .nav-profile-pic { border-color: var(--tg-accent-blue); }
+    .fab-btn { position: absolute; bottom: 80px; right: 20px; width: 56px; height: 56px; border-radius: 50%; background-color: var(--tg-accent-blue); box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; color: #fff; z-index: 9; animation: fabEntrance 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.6s both; }
+    .fab-btn svg { width: 24px; height: 24px; fill: currentColor; transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+    .fab-btn:hover svg { transform: rotate(90deg) scale(1.1); }
+    .fab-btn:active { transform: scale(0.9); }
+    .live-screen { position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 500px; height: 100%; background-color: var(--tg-chat-bg); display: flex; flex-direction: column; z-index: 100; visibility: hidden; opacity: 0; transition: opacity 0.3s, visibility 0.3s; }
+    .live-screen.open { visibility: visible; opacity: 1; }
+    .live-header { background-color: var(--tg-header); padding: 10px 12px; display: flex; align-items: center; gap: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.3); z-index: 5; }
+    .live-back { background: none; border: none; color: #fff; cursor: pointer; display: flex; padding: 4px; }
+    .live-header-avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg,#e74c3c,#c0392b); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; flex-shrink: 0; overflow: hidden; }
+    .live-header-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .live-header-info { flex: 1; min-width: 0; }
+    .live-header-name { font-size: 1rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .live-header-sub { font-size: 0.78rem; color: var(--tg-accent-blue); }
+    .live-pinned { display: flex; align-items: center; gap: 10px; background-color: var(--tg-header); padding: 8px 12px 10px; border-top: 1px solid rgba(255,255,255,0.04); box-shadow: 0 2px 6px rgba(0,0,0,0.25); z-index: 4; }
+    .live-pinned-accent { width: 3px; align-self: stretch; min-height: 30px; background: var(--tg-accent-blue); border-radius: 3px; flex-shrink: 0; }
+    .live-pinned-body { flex: 1; min-width: 0; }
+    .live-pinned-label { font-size: 0.72rem; font-weight: 700; color: var(--tg-accent-blue); }
+    .live-pinned-text { font-size: 0.85rem; color: var(--tg-text); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .live-pinned-join { flex-shrink: 0; background: var(--tg-accent-blue); color: #fff; border: none; padding: 7px 18px; border-radius: 16px; font-size: 0.82rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: transform 0.2s, filter 0.2s; }
+    .live-pinned-join:hover { filter: brightness(1.12); }
+    .live-pinned-join:active { transform: scale(0.93); }
+    .live-messages { flex: 1; overflow-y: auto; padding: 14px 12px; display: flex; flex-direction: column; gap: 8px; }
+    .live-messages::-webkit-scrollbar { width: 4px; }
+    .live-messages::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+    .msg-row { display: flex; gap: 8px; max-width: 85%; animation: msgIn 0.25s ease; }
+    .msg-row.me { align-self: flex-end; flex-direction: row-reverse; }
+    @keyframes msgIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .msg-avatar { width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #fff; overflow: hidden; }
+    .msg-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    .msg-bubble { background-color: var(--tg-bubble-other); padding: 7px 11px; border-radius: 12px; font-size: 0.9rem; line-height: 1.4; word-wrap: break-word; white-space: normal; }
+    .msg-row.me .msg-bubble { background-color: var(--tg-bubble-me); }
+    .msg-sender { font-size: 0.78rem; font-weight: 700; margin-bottom: 2px; }
+    .msg-text a { color: #6ec1ff !important; text-decoration: underline; word-break: break-all; cursor: pointer; pointer-events: auto; }
+    .msg-image { margin-top: 5px; border-radius: 10px; max-width: 220px; max-height: 220px; width: 100%; object-fit: cover; display: block; cursor: pointer; }
+    .msg-time { font-size: 0.65rem; color: var(--tg-text-muted); text-align: right; margin-top: 2px; }
+    .link-preview { margin-top: 6px; border-radius: 10px; overflow: hidden; background: rgba(0,0,0,0.2); border-left: 3px solid var(--tg-accent-blue); cursor: pointer; max-width: 260px; transition: filter 0.2s; pointer-events: auto; }
+    .link-preview:hover { filter: brightness(1.08); }
+    .link-preview img { width: 100%; max-height: 150px; object-fit: cover; display: block; }
+    .link-preview-body { padding: 7px 10px; }
+    .link-preview-title { font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .link-preview-desc { font-size: 0.78rem; color: var(--tg-text-muted); line-height: 1.3; }
+    .link-preview-domain { font-size: 0.72rem; color: var(--tg-accent-blue); margin-top: 3px; }
+    .live-input-bar { background-color: var(--tg-header); padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
+    .live-input { flex: 1; background-color: var(--tg-search-bg); border: none; border-radius: 20px; padding: 11px 16px; color: #fff; font-size: 0.92rem; outline: none; font-family: inherit; user-select: text; }
+    .live-input::placeholder { color: var(--tg-text-muted); }
+    .live-send { width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0; background-color: var(--tg-accent-blue); border: none; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
+    .live-send:active { transform: scale(0.9); }
+    .live-send svg { width: 22px; height: 22px; fill: currentColor; }
+    @keyframes badgePulse { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }
+    @keyframes slideDown { 0% { opacity: 0; transform: translateY(-30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeSlideUp { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeSlideUpStagger { 0% { opacity: 0; transform: translateY(24px) scale(0.98); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+    @keyframes fabEntrance { 0% { opacity: 0; transform: scale(0) rotate(-90deg); } 60% { transform: scale(1.15) rotate(5deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } }
+    @keyframes onlinePulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.7; transform: scale(1.15); } 100% { opacity: 1; transform: scale(1); } }
+    @keyframes typingDot { 0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-4px); } }
+    @keyframes slideUpBar { 0% { opacity: 0; transform: translateY(100%); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes tabEntrance { 0% { opacity: 0; transform: translateX(-12px) scale(0.9); } 100% { opacity: 1; transform: translateX(0) scale(1); } }
+    @keyframes statusCycle { 0%,100% { color: var(--tg-green-badge); } 50% { color: var(--tg-accent-blue); } }
+    @keyframes livePulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="header-top">
+        <h1 class="header-title">Telegram</h1>
+        <div class="header-icons">
+          <button class="icon-btn" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/></svg></button>
+          <button class="icon-btn" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/></svg></button>
+        </div>
+      </div>
+      <div class="search-container">
+        <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"/></svg>
+        <span class="search-placeholder">Search Chats</span>
+      </div>
+      <div class="tabs-wrapper">
+        <button class="tab-pill active">All <span class="tab-badge" id="all-tab-badge">78</span></button>
+        <button class="tab-pill live-pill" id="live-chat-tab"><span class="live-dot"></span> Live Chat</button>
+      </div>
+    </header>
+    <main class="chat-list" id="chat-list-container"></main>
+    <button class="fab-btn" id="fab-action" aria-label="Add Chat"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></button>
+    <nav class="bottom-nav">
+      <a href="#" class="nav-item active" id="nav-chats"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg><span>Chats</span><span class="nav-badge" id="nav-unread-badge">78</span></a>
+      <a href="#" class="nav-item" id="nav-contacts"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><span>Contacts</span></a>
+      <a href="#" class="nav-item" id="nav-settings"><svg class="nav-icon" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg><span>Settings</span></a>
+      <a href="#" class="nav-item" id="nav-profile"><img class="nav-profile-pic" src="https://picsum.photos/id/1025/50/50" alt="Profile"><span>Profile</span></a>
+    </nav>
+  </div>
+  <div class="live-screen" id="live-screen">
+    <div class="live-header">
+      <button class="live-back" id="live-back" aria-label="Back"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></button>
+      <div class="live-header-avatar" id="live-header-avatar">SK</div>
+      <div class="live-header-info">
+        <div class="live-header-name" id="live-header-name">SK Live Group</div>
+        <div class="live-header-sub" id="live-header-sub">14,238 members, 326 online</div>
+      </div>
+    </div>
+    <div class="live-pinned" id="live-pinned">
+      <div class="live-pinned-accent"></div>
+      <div class="live-pinned-body">
+        <div class="live-pinned-label" id="pinned-label">📌 Pinned</div>
+        <div class="live-pinned-text" id="pinned-text">🥵 ভিডিও পেতে চ্যানেল জয়েন করুন</div>
+      </div>
+      <button class="live-pinned-join" id="pinned-join">Join</button>
+    </div>
+    <div class="live-messages" id="live-messages"></div>
+    <div class="live-input-bar">
+      <input type="text" class="live-input" id="live-input" placeholder="Message">
+      <button class="live-send" id="live-send" aria-label="Send"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+    </div>
+  </div>
+
+  <script>
+    // ==========================================
+    // কনফিগারেশন (সব এখানে এডিট করুন)
+    // ==========================================
+    const CONFIG = {
+      channels: [
+        { name: "HK- প্রিমিয়াম কালেকশন 🥵😍",      avatarText: "HK", avatarClass: "avatar-orange", logoUrl: "https://i.postimg.cc/gjK9VSY7/IMG-20261009-202701-180.jpg", redirectUrl: "https://t.me/+JFywAQIF09hiOWE1", initialUnreads: 512, isMuted: false, timeText: "10:14 AM" },
+        { name: "HK- Deshi Video Link 🍑🥵",     avatarText: "MO", avatarClass: "avatar-blue",   logoUrl: "https://i.postimg.cc/s222vWJD/IMG-20261009-201250-843.jpg", redirectUrl: "https://t.me/+lRZMSao6LDsxZTk1", initialUnreads: 387, isMuted: false, timeText: "10:08 AM" },
+        { name: "HK- Deshi Video 18 🥵",           avatarText: "TL", avatarClass: "avatar-green",  logoUrl: "https://i.postimg.cc/ZnPNh2Dn/IMG-20260610-233430-165.jpg", redirectUrl: "https://t.me/+3gDaEu_-tIc2ZTVl", initialUnreads: 264, isMuted: false, timeText: "Mon" },
+        { name: "HK- রাশিয়ান ভিডিও 🥵",          avatarText: "VP", avatarClass: "avatar-purple", logoUrl: "https://i.postimg.cc/ZqgJnMRd/IMG-20261009-201201-105.jpg", redirectUrl: "https://t.me/+WYhrEQ1mBHBhNjBl", initialUnreads: 429, isMuted: true,  timeText: "Sun" },
+        { name: "HK- Terabox Link 🖇️",         avatarText: "NX", avatarClass: "avatar-red",    logoUrl: "https://i.postimg.cc/MH0B8NrX/IMG-20260610-233550-270.jpg", redirectUrl: "https://t.me/+9wO-WXfWIUBlNDBl", initialUnreads: 153, isMuted: false, timeText: "Fri" }
+      ],
+      liveGroup: {
+        name: "😘 মেয়েদের সাথে রাসের গল্প ❤️‍🩹",
+        avatarText: "HK",
+        logoUrl: "https://i.postimg.cc/zXsfk0dV/IMG-20260609-205635-695.jpg",                     // গ্রুপের নিজের লোগো (চাইলে দিন)
+        startMembers: 14238,
+        startOnline: 326,
+        pinnedLabel: "📌 Pinned",
+        pinnedText: "🥰 ভিডিও পেতে চ্যানেল জয়েন করুন",
+        joinButtonText: "Join",
+        joinButtonLink: "https://t.me/+ji7TQpuDyB1mNjk1",
+
+        // অটো-রিপ্লাই: লেখা + লিংক একসাথে সাজান
+        autoReplyMessage: `🎬 আসসালামু আলাইকুম! গ্রুপে স্বাগতম ❤️
+
+সব এক্সক্লুসিভ ভিডিও দেখতে নিচের চ্যানেলে জয়েন করুন 👇
+https://t.me/+ji7TQpuDyB1mNjk1
+
+ধন্যবাদ 🙏`,
+
+        // সাধারণ সাইট লিংক দিলে এই থাম্বনেইল প্রিভিউ দেখাবে
+        defaultSitePreview: {
+          image: "https://i.postimg.cc/ZKFQfqH1/Screenshot-2026-0604-224254.png",
+          title: "🎬 HK Video Site",
+          description: "এখানে ক্লিক করে ভিডিও দেখুন"
+        },
+
+        fakeUsers: [
+          { name: "মেঘলা",      color: "#e67e22", logoUrl: "https://i.postimg.cc/4NdrNMtX/image-2026-06-09-20-54-58.jpg" },
+          { name: "Tania",      color: "#9b59b6", logoUrl: "https://i.postimg.cc/tTqBvZNY/download-(6).jpg" },
+          { name: "মিতু",        color: "#27ae60", logoUrl: "https://i.postimg.cc/15nJdZw8/download-(5).jpg" },
+          { name: "Mim",        color: "#e74c3c", logoUrl: "https://i.postimg.cc/qv2QkXm7/download-(4).jpg" },
+          { name: "আখি",       color: "#2980b9", logoUrl: "https://i.postimg.cc/GpQQD3wM/download-(3).jpg" },
+          { name: "Nadia",      color: "#16a085", logoUrl: "https://i.postimg.cc/PxVQ66qD/download-(2).jpg" },
+          { name: "তানিয়া",      color: "#d35400", logoUrl: "https://i.postimg.cc/dQX9rSpP/download-(1).jpg" },
+          { name: "Sumi",       color: "#8e44ad", logoUrl: "https://i.postimg.cc/fRQjgSMr/download.jpg" },
+          { name: "মিথিলা",      color: "#c0392b", logoUrl: "https://i.postimg.cc/pdqfT0zS/Fall-Photo-Shoot-Outfits.jpg" },
+          { name: "Jannat",     color: "#2c3e50", logoUrl: "https://i.postimg.cc/Wb8cX9Yf/download-(9).jpg" },
+          { name: "তিথি",       color: "#7f8c8d", logoUrl: "https://i.postimg.cc/QdMGPpRx/download-(8).jpg" },
+          { name: "তামান্না",     color: "#1abc9c", logoUrl: "https://i.postimg.cc/y8r4zDHS/download-(1).webp" },
+          { name: "Lima",       color: "#e84393", logoUrl: "https://i.postimg.cc/8CJ8kTkD/download.webp" },
+          { name: "রুমানা",      color: "#0984e3", logoUrl: "https://i.postimg.cc/nL6yCNMn/download-(7).jpg" }
+        ],
+        // মেসেজে লেখা + লিংক + ছবি একসাথে দিতে পারেন (লিংকের আগে স্পেস বা \n দিন)
+        fakeMessages: [
+          "হাই 👋", "হ্যালো সবাই", "ভাই নতুন ভিডিও কখন আসবে?",
+          "Assalamualaikum", "দারুণ গ্রুপ ❤️",
+          "এই ভিডিও টা দেখেন 🔥\nhttps://deshi.kesug.com/",
+          "নতুন ভিডিও আপলোড হয়েছে 😍 দেখুন 👇\nhttps://deshi.kesug.com",
+          "কেমন আছেন সবাই?", "🔥🔥🔥", "ভাই অনেক ভালো কন্টেন্ট",
+          "আমি জয়েন করলাম 😍", "next video?", "ধন্যবাদ অ্যাডমিন",
+          "কেউ আছেন এখানে?", "👍👍", "ভালো লাগলো গ্রুপটা",
+          "ভাই আমাকে অ্যাড করেন", "কালকের ভিডিওটা সেরা ছিল 🔥",
+          "অসাধারণ 😍😍", "ভিডিও আপলোড দেন তাড়াতাড়ি",
+          "গ্রুপটা একদম জোস ❤️🔥", "আমিও জয়েন করলাম এখন",
+          "🎉🎉🎉", "ভাই দারুণ কাজ করছেন", "ওয়াও 😮", "সবাইকে স্বাগতম 🙏"
+        ]
+      }
+    };
+
+    // ==========================================
+    // চ্যাট লিস্ট রেন্ডার
+    // ==========================================
+    function initChatList() {
+      const container = document.getElementById('chat-list-container');
+      container.innerHTML = '';
+      CONFIG.channels.forEach((channel, idx) => {
+        const item = document.createElement('div');
+        item.className = 'chat-item';
+        item.setAttribute('data-idx', idx);
+        item.setAttribute('data-online', 'true');
+        item.addEventListener('click', () => window.open(channel.redirectUrl, '_blank'));
+        const verifiedIconHTML = channel.name.includes('✅') ? `<svg class="verified-icon" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>` : '';
+        const checkmarkHTML = !channel.isMuted ? `<svg class="double-tick" viewBox="0 0 24 24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM2 13.5l1.41-1.41 4.24 4.24-1.41 1.41L2 13.5z" fill="#229ed9"/></svg>` : '';
+        const avatarInner = channel.logoUrl ? `<img src="${channel.logoUrl}" alt="${channel.avatarText}">` : channel.avatarText;
+        item.innerHTML = `
+          <div class="avatar ${channel.avatarClass}">${avatarInner}</div>
+          <div class="chat-details">
+            <div class="chat-row-top">
+              <div class="chat-name-area"><span class="chat-title">${channel.name.replace(' ✅', '')}</span>${verifiedIconHTML}</div>
+              <div class="chat-time-status">${checkmarkHTML}<span>${channel.timeText}</span></div>
+            </div>
+            <div class="chat-row-bottom">
+              <span class="chat-message-preview" id="preview-${idx}">অনলাইন</span>
+              <span class="unread-badge ${channel.isMuted ? 'muted' : ''}" id="badge-${idx}">${channel.initialUnreads}</span>
+            </div>
+          </div>`;
+        container.appendChild(item);
+      });
+      const fallback = CONFIG.channels[0].redirectUrl;
+      document.getElementById('fab-action').addEventListener('click', () => window.open(fallback, '_blank'));
+      ['nav-chats','nav-contacts','nav-settings','nav-profile'].forEach(id => {
+        document.getElementById(id).addEventListener('click', (e) => { e.preventDefault(); window.open(fallback, '_blank'); });
+      });
+    }
+
+    function startRealTimeSimulator() {
+      const states = CONFIG.channels.map((ch) => ({ unreads: ch.initialUnreads, step: 0, progress: 10 }));
+      setInterval(() => {
+        CONFIG.channels.forEach((channel, idx) => {
+          const state = states[idx];
+          const previewEl = document.getElementById(`preview-${idx}`);
+          const badgeEl = document.getElementById(`badge-${idx}`);
+          if (!previewEl || !badgeEl) return;
+          state.step = (state.step + 1) % 5;
+          if (state.step === 0) { previewEl.innerText = "অনলাইন"; previewEl.classList.remove('active-live'); }
+          else if (state.step === 1) { previewEl.innerHTML = `✍️ টাইপ করছেন <span class="typing-dots"><span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span></span>`; previewEl.classList.add('active-live'); }
+          else if (state.step === 2) { previewEl.innerText = `📹 ভিডিও আপলোড হচ্ছে (12%)...`; previewEl.classList.add('active-live'); }
+          else if (state.step === 3) { previewEl.innerText = `📹 ভিডিও আপলোড হচ্ছে (74%)...`; previewEl.classList.add('active-live'); }
+          else if (state.step === 4) {
+            previewEl.innerText = "📹 ৩টি নতুন ভিডিও ফাইল আপলোড করা হয়েছে! ✓✓"; previewEl.classList.remove('active-live');
+            state.unreads += 1; badgeEl.innerText = state.unreads;
+            badgeEl.style.animation = 'none';
+            setTimeout(() => { badgeEl.style.animation = 'badgePulse 0.3s ease'; }, 10);
+            updateGlobalBadges();
+          }
+        });
+      }, 3000);
+    }
+    function updateGlobalBadges() {
+      let total = 0;
+      document.querySelectorAll('.chat-list .unread-badge').forEach(b => { total += parseInt(b.innerText) || 0; });
+      document.getElementById('all-tab-badge').innerText = total;
+      document.getElementById('nav-unread-badge').innerText = total;
+    }
+
+    // ==========================================
+    // লাইভ গ্রুপ চ্যাট
+    // ==========================================
+    const liveScreen = document.getElementById('live-screen');
+    const liveMessages = document.getElementById('live-messages');
+    const liveInput = document.getElementById('live-input');
+    let autoChatTimer = null, memberTimer = null, curMembers = 0, curOnline = 0;
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
+    }
+    function nowTime() {
+      const d = new Date(); let h = d.getHours(), m = d.getMinutes();
+      const ap = h >= 12 ? 'PM' : 'AM'; h = h % 12 || 12;
+      return `${h}:${m < 10 ? '0'+m : m} ${ap}`;
+    }
+    function buildLinkPreview(p) {
+      if (!p || (!p.image && !p.title)) return '';
+      const safeUrl = (p.url || '#').replace(/'/g, "%27");
+      const domain = p.url ? p.url.replace(/^https?:\/\//, '').split('/')[0] : '';
+      const imgHtml = p.image ? `<img src="${p.image}" alt="preview" onerror="this.style.display='none'">` : '';
+      return `<div class="link-preview" onclick="window.open('${safeUrl}','_blank')">${imgHtml}<div class="link-preview-body"><div class="link-preview-title">${escapeHtml(p.title || '')}</div><div class="link-preview-desc">${escapeHtml(p.description || '')}</div><div class="link-preview-domain">${escapeHtml(domain)}</div></div></div>`;
+    }
+    // মেসেজে লেখা + লিংক + ছবি একসাথে সাজানো
+    function formatMessageBody(rawText) {
+      let html = '';
+      const parts = String(rawText).split(/(https?:\/\/[^\s<]+)/g);
+      parts.forEach(part => {
+        if (/^https?:\/\//.test(part)) {
+          if (/\.(jpe?g|png|gif|webp|bmp)(\?.*)?$/i.test(part)) {
+            html += `<img class="msg-image" src="${part}" alt="image" onclick="window.open('${part.replace(/'/g,'%27')}','_blank')" onerror="this.style.display='none'">`;
+          } else {
+            html += `<a href="${part}" target="_blank" rel="noopener">${escapeHtml(part)}</a>`;
+            const sp = CONFIG.liveGroup.defaultSitePreview;
+            if (sp && (sp.image || sp.title)) html += buildLinkPreview({ image: sp.image, title: sp.title, description: sp.description, url: part });
+          }
+        } else if (part) {
+          html += escapeHtml(part).replace(/\n/g, '<br>');
+        }
+      });
+      return html;
+    }
+
+    function addMessage({ sender, text, color, me = false, isHtml = false, logoUrl = "" }) {
+      const row = document.createElement('div');
+      row.className = 'msg-row' + (me ? ' me' : '');
+      const initials = me ? 'আ' : (sender ? sender.charAt(0).toUpperCase() : '?');
+      const avatarColor = me ? '#2b5278' : (color || '#555');
+      const avatarInner = (!me && logoUrl) ? `<img src="${logoUrl}" alt="${escapeHtml(sender || '')}">` : initials;
+      const senderHTML = me ? '' : `<div class="msg-sender" style="color:${color || '#6ec1ff'}">${escapeHtml(sender)}</div>`;
+      const bodyHTML = isHtml ? text : escapeHtml(text);
+      row.innerHTML = `<div class="msg-avatar" style="background:${avatarColor}">${avatarInner}</div><div class="msg-bubble">${senderHTML}<div class="msg-text">${bodyHTML}</div><div class="msg-time">${nowTime()}</div></div>`;
+      liveMessages.appendChild(row);
+      liveMessages.scrollTop = liveMessages.scrollHeight;
+    }
+
+    function pushRandomFakeMessage() {
+      const g = CONFIG.liveGroup;
+      const user = g.fakeUsers[Math.floor(Math.random() * g.fakeUsers.length)];
+      const text = g.fakeMessages[Math.floor(Math.random() * g.fakeMessages.length)];
+      addMessage({ sender: user.name, text: formatMessageBody(text), color: user.color, logoUrl: user.logoUrl, isHtml: true });
+    }
+
+    function updateMemberText() {
+      document.getElementById('live-header-sub').innerText = `${curMembers.toLocaleString('en-US')} members, ${curOnline.toLocaleString('en-US')} online`;
+    }
+
+    function openLiveChat() {
+      const g = CONFIG.liveGroup;
+      document.getElementById('live-header-name').innerText = g.name;
+      const hAv = document.getElementById('live-header-avatar');
+      hAv.innerHTML = g.logoUrl ? `<img src="${g.logoUrl}" alt="${g.avatarText}">` : g.avatarText;
+      document.getElementById('pinned-label').innerText = g.pinnedLabel || '📌 Pinned';
+      document.getElementById('pinned-text').innerText = g.pinnedText || '';
+      const pinJoin = document.getElementById('pinned-join');
+      pinJoin.innerText = g.joinButtonText || 'Join';
+      pinJoin.onclick = () => window.open(g.joinButtonLink, '_blank');
+
+      liveMessages.innerHTML = '';
+      for (let i = 0; i < 8; i++) pushRandomFakeMessage();
+      liveScreen.classList.add('open');
+
+      if (autoChatTimer) clearInterval(autoChatTimer);
+      autoChatTimer = setInterval(() => pushRandomFakeMessage(), 1800 + Math.random() * 1800);
+
+      curMembers = g.startMembers; curOnline = g.startOnline;
+      updateMemberText();
+      if (memberTimer) clearInterval(memberTimer);
+      memberTimer = setInterval(() => {
+        curMembers += Math.floor(Math.random() * 4) + 1;
+        curOnline += Math.floor(Math.random() * 7) - 2;
+        if (curOnline < 50) curOnline = 50;
+        updateMemberText();
+      }, 2000);
+    }
+
+    function closeLiveChat() {
+      liveScreen.classList.remove('open');
+      if (autoChatTimer) { clearInterval(autoChatTimer); autoChatTimer = null; }
+      if (memberTimer) { clearInterval(memberTimer); memberTimer = null; }
+    }
+
+    function sendUserMessage() {
+      const val = liveInput.value.trim();
+      if (!val) return;
+      addMessage({ text: val, me: true });
+      liveInput.value = '';
+      setTimeout(() => {
+        addMessage({ sender: 'Admin', text: formatMessageBody(CONFIG.liveGroup.autoReplyMessage), color: '#229ed9', isHtml: true });
+      }, 800);
+    }
+
+    document.getElementById('live-chat-tab').addEventListener('click', openLiveChat);
+    document.getElementById('live-back').addEventListener('click', closeLiveChat);
+    document.getElementById('live-send').addEventListener('click', sendUserMessage);
+    liveInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendUserMessage(); });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initChatList();
+      updateGlobalBadges();
+      startRealTimeSimulator();
+    });
+  </script>
+</body>
+</html>
